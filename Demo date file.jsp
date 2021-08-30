@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
   <head>
-    <title>Dev Ops Hit</title>
+    <title>HIT - DevOps Final Project</title>
 
     <%
       String userName = request.getParameter("userName");
