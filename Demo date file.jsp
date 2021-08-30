@@ -22,7 +22,7 @@
     <%
       if (userName != "") {
     %>
-      <h2>Hello <%=userName%>, Your inner avenger is: <%=randomNum%></h2>
+      <h2>Hello <%=userName%>, Your inner avenger is:</h2>
       <%
         if (randomNum == 1) {
       %>
@@ -36,7 +36,7 @@
     <%
         if (randomNum == 3) {
       %>
-          <h2>Tony Stark!</h2>
+          <h2>Black Widow!</h2>
       <% } %>
     <%
         if (randomNum == 4) {
