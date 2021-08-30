@@ -44,7 +44,7 @@
           <h2>Captain America!</h2>
       <% } %>
       <%
-        if (randomNum = 5){
+        if (randomNum == 5){
       %>
           <h2>Doctor Strange!</h2>
       <% } %>
