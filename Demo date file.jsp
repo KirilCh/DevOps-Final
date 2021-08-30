@@ -1,13 +1,39 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-    <%@ page import="java.util.*" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page import="java.util.Random" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Guru current Dateeeeeeeeeeeeee</title>
-</head>
-<body>
-Today's date: <%= (new java.util.Date()).toLocaleString()%>
-</body>
+  <head>
+    <title>Dev Ops Hit</title>
+
+    <%
+      String userName = request.getParameter("userName");
+      Random rand = new Random();
+      int randomNum = rand.nextInt(11);
+      if (userName == null)
+        userName = "";
+    %>
+  </head>
+
+  <body>
+    <form method="get">
+      Enter your name: <input name="userName" value="<%=userName%>">
+      <input type="submit" value="Generate number">
+    </form>
+  
+    <%
+      if (userName != "") {
+    %>
+      <h2>Hello <%=userName%>, Your number is: <%=randomNum%></h2>
+      <%
+        if (randomNum > 5) {
+      %>
+          <h2>This number is so high, Great Job</h2>
+      <% } %>
+      <%
+        if (randomNum <= 5){
+      %>
+          <h2>This number is a bit low, try again</h2>
+      <% } %>
+    <% } %>
+
+  </body>
 </html>
