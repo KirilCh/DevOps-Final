@@ -23,6 +23,11 @@
       if (userName != "") {
     %>
       <h2>Hello <%=userName%>, Your inner avenger is:</h2>
+    <%
+        if (randomNum == 0) {
+      %>
+          <h2>Loki</h2>
+      <% } %>
       <%
         if (randomNum == 1) {
       %>
