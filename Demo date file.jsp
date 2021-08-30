@@ -13,7 +13,7 @@
     %>
   </head>
 
-  <body background="avengersbackground.png", background-size=cover>
+  <body background="avengersbackground.png">
     <form method="get">
       Enter your name: <input name="userName" value="<%=userName%>">
       <input type="submit" value="Which avenger are you?">
