@@ -12,7 +12,8 @@
         userName = "";
     %>
   </head>
-
+      <body style="background-image: url('avengersbackground.png');background-repeat: no-repeat;  background-position: center;
+  ">
      <form method="get" style="display: flex;flex-direction: column;justify-content:center">
       <p>Enter your name and find which avenger you are</p>
       <div style="width: 200px; text-align: center;">
