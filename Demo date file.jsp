@@ -13,10 +13,12 @@
     %>
   </head>
 
-  <body background="avengersbackground.png">
-    <form method="get">
-      Enter your name: <input name="userName" value="<%=userName%>">
-      <input type="submit" value="Which avenger are you?">
+     <form method="get" style="display: flex;flex-direction: column;justify-content:center">
+      <p>Enter your name and find which avenger you are</p>
+      <div style="width: 200px; text-align: center;">
+      <input name="userName" value="<%=userName%>" style="width: 100px; margin-bottom: 10px;">
+      </div>
+      <input type="submit" value="Which avenger are you?" style="width: 200px;">
     </form>
   
     <%
